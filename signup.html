@@ -104,7 +104,7 @@
                 if (passwd !== $("#rePassword").val()) {
                     alert("两次输入密码不一致，请检查后再试");
                 }
-                ajax_signup($('#Email').val(), passwd, $("#sendMail").val());
+                ajax_signup($('#Email').val(), passwd, $("#sendMail").prop("checked"));
             }
         });
         // 将验证码加到id为captcha的元素里，同时会有三个input的值：geetest_challenge, geetest_validate, geetest_seccode
