@@ -45,7 +45,7 @@
 				</div>
 				<div class="col-md-4 column">
 					<h3 class="text-center">
-						<img style="width:100px;" src="https://pic4.zhimg.com/26683a0eb9ae57c189e1e668eed0acb7_xl.jpg" class="img-circle" />问答系统登陆
+						<img style="width:100px;" src="img/logo.jpg" class="img-circle" />问答系统登陆
 					</h3>
 					<form role="form">
 						<div class="form-group">
@@ -91,7 +91,7 @@
     };
     $.ajax({
         // 获取id，challenge，success（是否启用failback）
-        url: "../web/StartCaptchaServlet.php?t=" + (new Date()).getTime(), // 加随机数防止缓存
+        url: "web/StartCaptchaServlet.php?t=" + (new Date()).getTime(), // 加随机数防止缓存
         type: "get",
         dataType: "json",
         success: function (data) {
