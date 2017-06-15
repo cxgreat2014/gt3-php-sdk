@@ -3,8 +3,8 @@
  * 输出二次验证结果,本文件示例只是简单的输出 Yes or No
  */
 // error_reporting(0);
-require_once dirname(dirname(__FILE__)) . '/lib/class.geetestlib.php';
-require_once dirname(dirname(__FILE__)) . '/config/config.php';
+require_once dirname(__FILE__) . '/class.geetestlib.php';
+require_once dirname(__FILE__) . '/config.php';
 session_start();
 $GtSdk = new GeetestLib(CAPTCHA_ID, PRIVATE_KEY);
 
